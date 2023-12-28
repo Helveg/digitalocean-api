@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class FloatingIpActionsService {
-  constructor(public client: OpenAPIConfig) {}
+export class FloatingIpActionsService extends ApiService {
   /**
    * List All Actions for a Floating IP
    * To retrieve all actions that have been executed on a floating IP, send a GET request to `/v2/floating_ips/$FLOATING_IP/actions`.

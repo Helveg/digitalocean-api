@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class ProjectResourcesService {
-  constructor(public client: OpenAPIConfig) {}
+export class ProjectResourcesService extends ApiService {
   /**
    * List Project Resources
    * To list all your resources in a project, send a GET request to `/v2/projects/$PROJECT_ID/resources`.

@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class ImagesService {
-  constructor(public client: OpenAPIConfig) {}
+export class ImagesService extends ApiService {
   /**
    * List All Images
    * To list all of the images available on your account, send a GET request to /v2/images.

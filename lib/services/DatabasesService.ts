@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class DatabasesService {
-  constructor(public client: OpenAPIConfig) {}
+export class DatabasesService extends ApiService {
   /**
    * List Database Options
    * To list all of the options available for the offered database engines, send a GET request to `/v2/databases/options`.

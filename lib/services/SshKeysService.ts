@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class SshKeysService {
-  constructor(public client: OpenAPIConfig) {}
+export class SshKeysService extends ApiService {
   /**
    * List All SSH Keys
    * To list all of the keys in your account, send a GET request to `/v2/account/keys`. The response will be a JSON object with a key set to `ssh_keys`. The value of this will be an array of ssh_key objects, each of which contains the standard ssh_key attributes.

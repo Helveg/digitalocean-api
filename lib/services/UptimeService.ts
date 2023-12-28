@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class UptimeService {
-  constructor(public client: OpenAPIConfig) {}
+export class UptimeService extends ApiService {
   /**
    * List All Checks
    * To list all of the Uptime checks on your account, send a GET request to `/v2/uptime/checks`.

@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class AppsService {
-  constructor(public client: OpenAPIConfig) {}
+export class AppsService extends ApiService {
   /**
    * List All Apps
    * List all apps on your account. Information about the current active deployment as well as any in progress ones will also be included for each app.

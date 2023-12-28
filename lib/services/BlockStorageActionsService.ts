@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class BlockStorageActionsService {
-  constructor(public client: OpenAPIConfig) {}
+export class BlockStorageActionsService extends ApiService {
   /**
    * Initiate A Block Storage Action By Volume Name
    * To initiate an action on a block storage volume by Name, send a POST request to

@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class ClickApplicationsService {
-  constructor(public client: OpenAPIConfig) {}
+export class ClickApplicationsService extends ApiService {
   /**
    * List 1-Click Applications
    * To list all available 1-Click applications, send a GET request to `/v2/1-clicks`. The `type` may

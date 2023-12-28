@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class RegionsService {
-  constructor(public client: OpenAPIConfig) {}
+export class RegionsService extends ApiService {
   /**
    * List All Data Center Regions
    * To list all of the regions that are available, send a GET request to `/v2/regions`.

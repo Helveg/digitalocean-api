@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class ContainerRegistryService {
-  constructor(public client: OpenAPIConfig) {}
+export class ContainerRegistryService extends ApiService {
   /**
    * Get Container Registry Information
    * To get information about your container registry, send a GET request to `/v2/registry`.

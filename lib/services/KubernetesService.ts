@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class KubernetesService {
-  constructor(public client: OpenAPIConfig) {}
+export class KubernetesService extends ApiService {
   /**
    * List All Kubernetes Clusters
    * To list all of the Kubernetes clusters on your account, send a GET request

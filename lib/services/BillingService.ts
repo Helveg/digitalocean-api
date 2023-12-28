@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class BillingService {
-  constructor(public client: OpenAPIConfig) {}
+export class BillingService extends ApiService {
   /**
    * Get Customer Balance
    * To retrieve the balances on a customer's account, send a GET request to `/v2/customers/my/balance`.

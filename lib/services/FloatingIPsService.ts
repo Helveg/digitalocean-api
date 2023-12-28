@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class FloatingIPsService {
-  constructor(public client: OpenAPIConfig) {}
+export class FloatingIPsService extends ApiService {
   /**
    * List All Floating IPs
    * To list all of the floating IPs available on your account, send a GET request to `/v2/floating_ips`.

@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class CertificatesService {
-  constructor(public client: OpenAPIConfig) {}
+export class CertificatesService extends ApiService {
   /**
    * List All Certificates
    * To list all of the certificates available on your account, send a GET request to `/v2/certificates`.

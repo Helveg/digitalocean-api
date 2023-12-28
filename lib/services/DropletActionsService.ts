@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class DropletActionsService {
-  constructor(public client: OpenAPIConfig) {}
+export class DropletActionsService extends ApiService {
   /**
    * List Actions for a Droplet
    * To retrieve a list of all actions that have been executed for a Droplet, send

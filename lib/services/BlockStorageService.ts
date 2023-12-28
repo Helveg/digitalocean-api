@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class BlockStorageService {
-  constructor(public client: OpenAPIConfig) {}
+export class BlockStorageService extends ApiService {
   /**
    * List All Block Storage Volumes
    * To list all of the block storage volumes available on your account, send a GET request to `/v2/volumes`.

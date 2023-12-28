@@ -3,11 +3,10 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { CancelablePromise } from "../core/CancelablePromise";
-import { OpenAPIConfig } from "../core/OpenAPI";
+import { ApiService } from "../core/ApiService";
 import { request as __request } from "../core/request";
 
-export class SnapshotsService {
-  constructor(public client: OpenAPIConfig) {}
+export class SnapshotsService extends ApiService {
   /**
    * List All Snapshots
    * To list all of the snapshots available on your account, send a GET request to
