@@ -1,0 +1,21 @@
+{
+  "name": "digitalocean-api",
+  "version": "0.0.1",
+  "description": "Auto generated OpenAPI client for the DigitalOcean API",
+  "author": "",
+  "private": true,
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.25.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.0"
+  }
+}
