@@ -1,6 +1,6 @@
 {
   "name": "do2-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Auto generated OpenAPI client for the DigitalOcean API v2",
   "publishConfig": {
     "access": "public"
